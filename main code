@@ -1,0 +1,19 @@
+#interest rate calculator
+
+P = r = t = 0
+
+#inputs
+
+P = int(input('what is the initial investment?  ')) 
+
+r = float(input('what is the interest rate?  '))
+
+t = int(input('how many years is the principle invested?  '))
+
+
+#biannual rate calculation in every year
+
+
+for i in range(t+1):                               
+    A = P *(1+(r/2)) **(2*i)
+    print('monetary value for year #', i, A, sep=' ')
